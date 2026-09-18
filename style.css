@@ -254,8 +254,8 @@ img{max-width:100%;display:block;}
 }
 .strip-track{
   display:flex; gap:26px; white-space:nowrap; width:max-content;
-  font-family:'Big Shoulders Display'; font-size:1.5rem; font-weight:800; color:transparent; letter-spacing:0;
-  -webkit-text-stroke:1px rgba(245,238,238,.45);
+  font-family:'Bebas Neue'; font-size:2rem; font-weight:400; color:transparent; letter-spacing:.04em;
+  -webkit-text-stroke:1px rgba(245,238,238,.5);
   animation:scrollX 30s linear infinite;
 }
 .strip-track span:nth-child(2n){ -webkit-text-stroke:0; color:var(--accent-bright); }
