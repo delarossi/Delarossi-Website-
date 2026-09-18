@@ -25,12 +25,11 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 h1,h2,h3,h4{
-  font-family:'Archivo Black', sans-serif;
+  font-family:'Bungee', sans-serif;
   font-weight:400;
   margin:0;
-  letter-spacing:-.01em;
+  letter-spacing:0;
   text-transform:uppercase;
-  font-style:italic;
 }
 a{color:inherit;text-decoration:none;}
 p{color:var(--muted); line-height:1.65; margin:0;}
@@ -130,7 +129,7 @@ img{max-width:100%;display:block;}
   position:fixed; inset:0; background:rgba(3,1,2,.98); backdrop-filter:blur(20px);
   z-index:45; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:28px;
   transform:translateY(-100%); transition:transform .4s var(--ease); font-size:1.5rem;
-  font-family:'Archivo Black', sans-serif; font-weight:400; letter-spacing:.01em; text-transform:uppercase; font-style:italic;
+  font-family:'Bungee', sans-serif; font-weight:400; letter-spacing:0; text-transform:uppercase;
 }
 .mobile-menu.open{transform:translateY(0);}
 
@@ -144,8 +143,8 @@ img{max-width:100%;display:block;}
   white-space:nowrap; opacity:.3; pointer-events:none;
 }
 .marquee-track{
-  display:inline-block; font-family:'Permanent Marker', cursive; font-size:1.05rem; font-weight:400;
-  letter-spacing:.04em; text-transform:uppercase; color:var(--muted);
+  display:inline-block; font-family:'Bungee', sans-serif; font-size:.7rem; font-weight:400;
+  letter-spacing:.06em; text-transform:uppercase; color:var(--muted);
   animation:marquee 24s linear infinite;
 }
 @keyframes marquee{from{transform:translateX(0);} to{transform:translateX(-50%);}}
@@ -179,7 +178,7 @@ img{max-width:100%;display:block;}
   padding:15px 30px; border-radius:100px; font-weight:500; font-size:.95rem;
   transition:transform .35s var(--ease), box-shadow .35s var(--ease), background .35s var(--ease);
   transform-style:preserve-3d; will-change:transform;
-  font-family:'Archivo Black', sans-serif; font-weight:400; letter-spacing:.02em; text-transform:uppercase; font-style:italic;
+  font-family:'Bungee', sans-serif; font-weight:400; letter-spacing:0; text-transform:uppercase;
 }
 .btn-primary{
   background:linear-gradient(135deg, var(--accent-bright), var(--accent));
@@ -255,7 +254,7 @@ img{max-width:100%;display:block;}
 }
 .strip-track{
   display:flex; gap:26px; white-space:nowrap; width:max-content;
-  font-family:'Archivo Black'; font-size:1.2rem; font-weight:400; color:transparent; letter-spacing:.01em; font-style:italic;
+  font-family:'Bungee'; font-size:1rem; font-weight:400; color:transparent; letter-spacing:0;
   -webkit-text-stroke:1px rgba(245,238,238,.45);
   animation:scrollX 30s linear infinite;
 }
@@ -265,7 +264,7 @@ img{max-width:100%;display:block;}
 /* ---------- sections generic ---------- */
 section{position:relative; z-index:1; padding:120px 5vw;}
 .section-head{margin-bottom:60px;}
-.tag{font-size:.95rem; letter-spacing:.04em; color:var(--accent-bright); font-family:'Permanent Marker', cursive; font-weight:400; text-transform:uppercase;}
+.tag{font-size:.7rem; letter-spacing:.1em; color:var(--accent-bright); font-family:'Bungee', sans-serif; font-weight:400; text-transform:uppercase;}
 .section-head h2{font-size:clamp(1.9rem, 4vw, 2.8rem); margin-top:14px;}
 
 [data-reveal]{
@@ -298,7 +297,7 @@ section{position:relative; z-index:1; padding:120px 5vw;}
 }
 .mix-row:hover .mix-play{background:var(--accent); color:#fff; transform:scale(1.08);}
 .mix-info{flex:1;}
-.mix-info h4{font-size:1rem; font-weight:400; font-family:'Archivo Black'; letter-spacing:0; font-style:italic;}
+.mix-info h4{font-size:.9rem; font-weight:400; font-family:'Bungee'; letter-spacing:0; text-transform:uppercase;}
 .mix-info p{font-size:.85rem; margin-top:4px;}
 .mix-wave{display:flex; align-items:center; gap:3px; height:24px;}
 .mix-wave span{width:3px; background:var(--muted); border-radius:2px; height:30%; transition:background .3s;}
@@ -313,7 +312,7 @@ section{position:relative; z-index:1; padding:120px 5vw;}
   padding:26px 10px; border-bottom:1px solid var(--line); transition:padding-left .3s var(--ease);
 }
 .tour-row:hover{padding-left:20px; background:rgba(227,28,77,.04);}
-.tour-date{font-family:'Permanent Marker', cursive; color:var(--accent-bright); font-weight:400; font-size:1rem; letter-spacing:.01em; text-transform:uppercase;}
+.tour-date{font-family:'Bungee'; color:var(--accent-bright); font-weight:400; font-size:.75rem; letter-spacing:0; text-transform:uppercase;}
 .tour-name{font-weight:500;}
 .tour-city{color:var(--muted); font-size:.9rem;}
 .tour-link{color:var(--accent-bright); font-size:.9rem; text-align:right; opacity:0; transition:opacity .3s;}
