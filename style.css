@@ -149,7 +149,7 @@ img{max-width:100%;display:block;}
 }
 @keyframes marquee{from{transform:translateX(0);} to{transform:translateX(-50%);}}
 
-.hero-content{flex:1 1 480px; max-width:640px;}
+.hero-content{flex:1 1 480px; max-width:640px; margin-top:56px;}
 .eyebrow{
   display:inline-flex; align-items:center; gap:8px; font-size:.85rem; color:var(--muted);
   border:1px solid var(--line); padding:7px 14px; border-radius:100px; margin-bottom:28px;
