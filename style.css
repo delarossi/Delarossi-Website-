@@ -72,15 +72,15 @@ img{max-width:100%;display:block;}
   will-change:transform, opacity;
   background:radial-gradient(circle, var(--accent-bright), var(--accent-dim) 55%, transparent 72%);
 }
-.blob-a{width:640px;height:640px; top:-15%; left:-15%; opacity:.22; animation:float1 20s ease-in-out infinite;}
-.blob-b{width:580px;height:580px; bottom:-20%; right:-15%; opacity:.18; animation:float2 26s ease-in-out infinite;}
+.blob-a{width:640px;height:640px; top:-15%; left:-15%; opacity:.28; animation:float1 20s ease-in-out infinite;}
+.blob-b{width:580px;height:580px; bottom:-20%; right:-15%; opacity:.23; animation:float2 26s ease-in-out infinite;}
 @keyframes float1{
-  0%,100%{transform:translate(0,0) scale(1); opacity:.18;}
-  50%{transform:translate(90px,110px) scale(1.22); opacity:.28;}
+  0%,100%{transform:translate(0,0) scale(1); opacity:.24;}
+  50%{transform:translate(90px,110px) scale(1.22); opacity:.34;}
 }
 @keyframes float2{
-  0%,100%{transform:translate(0,0) scale(1); opacity:.14;}
-  50%{transform:translate(-100px,-60px) scale(0.9); opacity:.24;}
+  0%,100%{transform:translate(0,0) scale(1); opacity:.19;}
+  50%{transform:translate(-100px,-60px) scale(0.9); opacity:.29;}
 }
 
 .grid-floor{
@@ -92,7 +92,7 @@ img{max-width:100%;display:block;}
   transform:perspective(500px) rotateX(60deg) translateY(20%);
   transform-origin:bottom;
   mask-image:linear-gradient(to top, black, transparent 80%);
-  opacity:.3;
+  opacity:.36;
 }
 
 /* ---------- nav ---------- */
