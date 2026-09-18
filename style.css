@@ -254,11 +254,11 @@ img{max-width:100%;display:block;}
 }
 .strip-track{
   display:flex; gap:26px; white-space:nowrap; width:max-content;
-  font-family:'Bebas Neue'; font-size:2rem; font-weight:400; color:transparent; letter-spacing:.04em;
-  -webkit-text-stroke:1px rgba(245,238,238,.5);
+  font-family:'Big Shoulders Display'; font-size:1.8rem; font-weight:300; letter-spacing:.08em;
+  color:rgba(245,238,238,.55);
   animation:scrollX 30s linear infinite;
 }
-.strip-track span:nth-child(2n){ -webkit-text-stroke:0; color:var(--accent-bright); }
+.strip-track span:nth-child(2n){ color:var(--accent-bright); }
 @keyframes scrollX{from{transform:translateX(0);} to{transform:translateX(-50%);}}
 
 /* ---------- sections generic ---------- */
