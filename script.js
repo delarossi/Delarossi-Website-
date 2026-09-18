@@ -64,10 +64,3 @@ if (isFinePointer) {
     });
   });
 }
-
-/* --- vinyl tilts subtly with scroll position (parallax) --- */
-const vinylWrap = document.getElementById('vinylWrap');
-window.addEventListener('scroll', () => {
-  const y = Math.min(window.scrollY, 600);
-  vinylWrap.style.transform = `rotateY(${y * 0.04}deg) translateY(${y * 0.06}px)`;
-}, { passive: true });
