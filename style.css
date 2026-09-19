@@ -302,13 +302,6 @@ section{position:relative; z-index:1; padding:120px 5vw;}
 .fact-card:hover{border-color:rgba(227,28,77,.45); box-shadow:0 20px 50px rgba(0,0,0,.4);}
 .fact-num{font-family:'Big Shoulders Display'; font-weight:900; font-size:3rem; color:var(--accent-bright); line-height:1;}
 .fact-card p{margin-top:8px; font-size:.95rem;}
-.fact-num-sm{font-family:'Big Shoulders Display'; font-weight:800; font-size:1.3rem; text-transform:uppercase; color:var(--text);}
-.genre-tags{display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin-top:16px;}
-.genre-tags span{
-  font-size:.8rem; padding:6px 14px; border-radius:100px; border:1px solid var(--line);
-  color:var(--muted); background:var(--bg-soft);
-}
-
 /* ---------- faq ---------- */
 .faq-list{display:flex; flex-direction:column; gap:1px; background:var(--line); border-radius:var(--radius); overflow:hidden;}
 .faq-item{background:var(--bg-soft); padding:24px 28px;}
