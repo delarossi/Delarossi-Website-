@@ -310,10 +310,11 @@ section{position:relative; z-index:1; padding:120px 5vw;}
 }
 .faq-item summary::-webkit-details-marker{display:none;}
 .faq-item summary::after{
-  content:'+'; position:absolute; right:0; top:0; color:var(--accent-bright);
-  font-family:'Big Shoulders Display'; font-size:1.3rem; transition:transform .3s;
+  content:''; position:absolute; right:4px; top:4px; width:11px; height:11px;
+  background:var(--accent-bright);
+  clip-path:polygon(0% 0%, 0% 100%, 100% 50%);
 }
-.faq-item[open] summary::after{transform:rotate(45deg);}
+.faq-item[open] summary::after{clip-path:polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);}
 .faq-item p{margin-top:14px; max-width:720px;}
 
 /* ---------- gallery ---------- */
