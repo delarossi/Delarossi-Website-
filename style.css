@@ -370,6 +370,8 @@ section{position:relative; z-index:1; padding:120px 5vw;}
   position:relative; z-index:1; display:flex; justify-content:space-between;
   padding:34px 5vw; border-top:1px solid var(--line); color:var(--muted); font-size:.85rem;
 }
+.footer a{transition:color .25s;}
+.footer a:hover{color:var(--accent-bright);}
 
 /* ---------- responsive ---------- */
 @media (max-width: 900px){
