@@ -158,10 +158,9 @@ img{max-width:100%;display:block;}
 @keyframes pulse{0%,100%{opacity:1;} 50%{opacity:.35;}}
 
 .hero-title{display:flex; flex-direction:column; gap:6px;}
-.hero-title .line{
-  font-size:clamp(2.6rem, 7vw, 4.9rem); line-height:1; letter-spacing:.01em;
-  background:linear-gradient(180deg, #fff, #cbb5ba);
-  -webkit-background-clip:text; background-clip:text; color:transparent;
+.hero-logo-img{
+  width:min(90%, 420px); height:auto;
+  filter:drop-shadow(0 10px 30px rgba(227,28,77,.25));
 }
 .hero-title .sub{
   font-size:clamp(1.2rem, 2.6vw, 1.8rem); text-transform:none; letter-spacing:0;
