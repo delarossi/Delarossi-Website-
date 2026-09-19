@@ -330,7 +330,7 @@ section{position:relative; z-index:1; padding:120px 5vw;}
 .g-item:hover{transform:scale(1.02) translateY(-4px);}
 .g-item:hover::after{opacity:1;}
 .g1{grid-column:span 2; grid-row:span 2;}
-.g2{grid-column:span 2;}
+.g2{grid-column:span 2; grid-row:span 2;}
 .g3{grid-column:span 1;}
 .g4{grid-column:span 1;}
 .g5{grid-column:span 2;}
