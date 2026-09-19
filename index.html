@@ -55,6 +55,44 @@
   "sameAs": []
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wie weit im Voraus sollte ich buchen?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Am besten so früh wie möglich, besonders für Hochzeiten und Wochenend-Termine in der Hauptsaison. Kurzfristige Anfragen sind aber ebenfalls jederzeit einen Versuch wert." }
+    },
+    {
+      "@type": "Question",
+      "name": "Bringst du eigene Technik mit?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ja, ich bringe mein eigenes DJ-Equipment mit. Bei Bedarf kann zusätzlich Sound- und Lichttechnik für die Location organisiert werden." }
+    },
+    {
+      "@type": "Question",
+      "name": "Sind Musikwünsche möglich?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Auf jeden Fall — vorab in Absprache oder auch spontan während des Events. Ich lese den Raum und passe das Programm live an eure Gäste an." }
+    },
+    {
+      "@type": "Question",
+      "name": "In welchem Umkreis bist du buchbar?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Mein Zuhause ist der Schwarzwald, gebucht werde ich aber in ganz Süddeutschland. Bei größerer Entfernung einfach anfragen." }
+    },
+    {
+      "@type": "Question",
+      "name": "Was kostet ein DJ-Auftritt bei dir?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Das hängt von Anlass, Dauer und Location ab. Schreib mir kurz die Eckdaten deines Events, dann bekommst du ein unverbindliches, individuelles Angebot." }
+    },
+    {
+      "@type": "Question",
+      "name": "Spielst du auch mehrstündige Events wie Hochzeiten?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ja, von Sektempfang über den ersten Tanz bis zur Aftershow-Party — ich begleite euren ganzen Tag mit dem passenden Sound für jede Phase." }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -73,7 +111,7 @@
   <nav class="nav-links">
     <a href="#about">About</a>
     <a href="#mixes">Mixes</a>
-    <a href="#tour">Tour</a>
+    <a href="#faq">FAQ</a>
     <a href="#gallery">Gallery</a>
     <a href="#booking" class="nav-cta">Booking</a>
   </nav>
@@ -85,7 +123,7 @@
 <div class="mobile-menu" id="mobileMenu">
   <a href="#about">About</a>
   <a href="#mixes">Mixes</a>
-  <a href="#tour">Tour</a>
+  <a href="#faq">FAQ</a>
   <a href="#gallery">Gallery</a>
   <a href="#booking">Booking</a>
 </div>
@@ -200,36 +238,56 @@
     </div>
   </section>
 
-  <section class="tour" id="tour">
-    <div class="section-head" data-reveal>
-      <span class="tag">003 / Tour</span>
-      <h2>Nächste Dates</h2>
+  <section class="facts" id="facts">
+    <div class="facts-grid">
+      <div class="fact-card tilt" data-reveal>
+        <div class="fact-num">15+</div>
+        <p>Jahre Erfahrung</p>
+      </div>
+      <div class="fact-card tilt" data-reveal>
+        <div class="fact-num">250+</div>
+        <p>gespielte Events</p>
+      </div>
+      <div class="fact-card fact-genres tilt" data-reveal>
+        <div class="fact-num-sm">Musik-Allrounder</div>
+        <div class="genre-tags">
+          <span>Charts</span><span>House</span><span>Hip-Hop</span>
+          <span>Schlager</span><span>80s/90s</span><span>Black Music</span>
+        </div>
+      </div>
     </div>
-    <div class="tour-list">
-      <div class="tour-row" data-reveal>
-        <span class="tour-date">18 OKT</span>
-        <span class="tour-name">Warehouse Nights — Berlin</span>
-        <span class="tour-city">Berlin, DE</span>
-        <a href="#booking" class="tour-link">Tickets →</a>
-      </div>
-      <div class="tour-row" data-reveal>
-        <span class="tour-date">02 NOV</span>
-        <span class="tour-name">Club Elektra — Closing Set</span>
-        <span class="tour-city">Zürich, CH</span>
-        <a href="#booking" class="tour-link">Tickets →</a>
-      </div>
-      <div class="tour-row" data-reveal>
-        <span class="tour-date">21 DEZ</span>
-        <span class="tour-name">Underground Sessions</span>
-        <span class="tour-city">Wien, AT</span>
-        <a href="#booking" class="tour-link">Tickets →</a>
-      </div>
-      <div class="tour-row" data-reveal>
-        <span class="tour-date">14 FEB</span>
-        <span class="tour-name">Midnight Open Air</span>
-        <span class="tour-city">Amsterdam, NL</span>
-        <a href="#booking" class="tour-link">Tickets →</a>
-      </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="section-head" data-reveal>
+      <span class="tag">003 / FAQ</span>
+      <h2>Häufige Fragen</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" data-reveal>
+        <summary>Wie weit im Voraus sollte ich buchen?</summary>
+        <p>Am besten so früh wie möglich, besonders für Hochzeiten und Wochenend-Termine in der Hauptsaison. Kurzfristige Anfragen sind aber ebenfalls jederzeit einen Versuch wert.</p>
+      </details>
+      <details class="faq-item" data-reveal>
+        <summary>Bringst du eigene Technik mit?</summary>
+        <p>Ja, ich bringe mein eigenes DJ-Equipment mit. Bei Bedarf kann zusätzlich Sound- und Lichttechnik für die Location organisiert werden.</p>
+      </details>
+      <details class="faq-item" data-reveal>
+        <summary>Sind Musikwünsche möglich?</summary>
+        <p>Auf jeden Fall — vorab in Absprache oder auch spontan während des Events. Ich lese den Raum und passe das Programm live an eure Gäste an.</p>
+      </details>
+      <details class="faq-item" data-reveal>
+        <summary>In welchem Umkreis bist du buchbar?</summary>
+        <p>Mein Zuhause ist der Schwarzwald, gebucht werde ich aber in ganz Süddeutschland. Bei größerer Entfernung einfach anfragen.</p>
+      </details>
+      <details class="faq-item" data-reveal>
+        <summary>Was kostet ein DJ-Auftritt bei dir?</summary>
+        <p>Das hängt von Anlass, Dauer und Location ab. Schreib mir kurz die Eckdaten deines Events, dann bekommst du ein unverbindliches, individuelles Angebot.</p>
+      </details>
+      <details class="faq-item" data-reveal>
+        <summary>Spielst du auch mehrstündige Events wie Hochzeiten?</summary>
+        <p>Ja, von Sektempfang über den ersten Tanz bis zur Aftershow-Party — ich begleite euren ganzen Tag mit dem passenden Sound für jede Phase.</p>
+      </details>
     </div>
   </section>
 
