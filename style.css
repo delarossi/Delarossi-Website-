@@ -375,8 +375,9 @@ section{position:relative; z-index:1; padding:120px 5vw;}
   .about-grid{grid-template-columns:1fr;}
   .tour-row{grid-template-columns:70px 1fr; row-gap:6px;}
   .tour-city, .tour-link{grid-column:2;}
-  .gallery-grid{grid-template-columns:repeat(2,1fr); grid-auto-rows:140px;}
-  .g1,.g2,.g5{grid-column:span 2;}
+  .gallery-grid{grid-template-columns:1fr; grid-auto-rows:auto;}
+  .g-item{aspect-ratio:4/3;}
+  .g1,.g2,.g3,.g4,.g5{grid-column:span 1; grid-row:span 1;}
 }
 @media (prefers-reduced-motion: reduce){
   *{animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important;}
