@@ -25,7 +25,9 @@
 
 <link rel="icon" href="assets/logo.png" type="image/png" />
 
-<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="preload" href="assets/fonts/big-shoulders-display.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/hero-photo.webp" as="image">
 <link rel="stylesheet" href="style.css">
 
 <script type="application/ld+json">
@@ -263,19 +265,34 @@
     </div>
     <div class="gallery-grid">
       <div class="g-item g1 tilt" data-reveal>
-        <img src="assets/gallery/g1.jpg" alt="DJ Delarossi am DJ-Pult bei einem Club Event mit Lightshow" loading="lazy" />
+        <picture>
+          <source srcset="assets/gallery/g1.webp" type="image/webp">
+          <img src="assets/gallery/g1.jpg" alt="DJ Delarossi am DJ-Pult bei einem Club Event mit Lightshow" loading="lazy" />
+        </picture>
       </div>
       <div class="g-item g2 tilt" data-reveal>
-        <img src="assets/gallery/g2.jpg" alt="DJ Delarossi im 'Real DJing' Shirt beim Auflegen auf einem Festival" loading="lazy" />
+        <picture>
+          <source srcset="assets/gallery/g2.webp" type="image/webp">
+          <img src="assets/gallery/g2.jpg" alt="DJ Delarossi im 'Real DJing' Shirt beim Auflegen auf einem Festival" loading="lazy" />
+        </picture>
       </div>
       <div class="g-item g3 tilt" data-reveal>
-        <img src="assets/gallery/g3.jpg" alt="Portrait von DJ Delarossi backstage bei einem Firmenevent" loading="lazy" />
+        <picture>
+          <source srcset="assets/gallery/g3.webp" type="image/webp">
+          <img src="assets/gallery/g3.jpg" alt="Portrait von DJ Delarossi backstage bei einem Firmenevent" loading="lazy" />
+        </picture>
       </div>
       <div class="g-item g4 tilt" data-reveal>
-        <img src="assets/gallery/g4.jpg" alt="DJ Delarossi mit jungem Gast am DJ-Pult bei einer Clubveranstaltung" loading="lazy" />
+        <picture>
+          <source srcset="assets/gallery/g4.webp" type="image/webp">
+          <img src="assets/gallery/g4.jpg" alt="DJ Delarossi mit jungem Gast am DJ-Pult bei einer Clubveranstaltung" loading="lazy" />
+        </picture>
       </div>
       <div class="g-item g5 tilt" data-reveal style="--g-pos:center 25%;">
-        <img src="assets/gallery/g5.jpg" alt="DJ Delarossi lächelnd backstage bei einer Vereinsfeier" loading="lazy" />
+        <picture>
+          <source srcset="assets/gallery/g5.webp" type="image/webp">
+          <img src="assets/gallery/g5.jpg" alt="DJ Delarossi lächelnd backstage bei einer Vereinsfeier" loading="lazy" />
+        </picture>
       </div>
     </div>
   </section>
