@@ -85,3 +85,22 @@ const countIO = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.5 });
 countEls.forEach(el => countIO.observe(el));
+
+/* --- youtube facade: load real iframe only on click --- */
+document.querySelectorAll('.yt-facade').forEach(el => {
+  const load = () => {
+    const id = el.dataset.ytId;
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1`;
+    iframe.title = el.getAttribute('aria-label') || 'YouTube video';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    el.classList.remove('yt-facade');
+    el.innerHTML = '';
+    el.appendChild(iframe);
+  };
+  el.addEventListener('click', load);
+  el.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); load(); }
+  });
+});
