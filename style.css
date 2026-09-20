@@ -202,6 +202,12 @@ img{max-width:100%;display:block;}
 .btn-ghost{border:1px solid var(--line); color:var(--text);}
 .btn-ghost:hover{border-color:var(--accent); background:rgba(227,28,77,.08); transform:translateY(-3px);}
 .btn-lg{padding:18px 36px; font-size:1rem;}
+.btn-whatsapp{
+  background:linear-gradient(135deg, var(--accent-bright), var(--accent));
+  color:#fff; gap:10px;
+}
+.btn-whatsapp:hover{transform:translateY(-3px) translateZ(20px); box-shadow:0 14px 40px rgba(227,28,77,.4);}
+.whatsapp-icon{width:20px; height:20px; fill:currentColor; flex-shrink:0;}
 
 /* ---------- hero stage / logo mark ---------- */
 .hero-stage{
