@@ -215,7 +215,7 @@ img{max-width:100%;display:block;}
   perspective:1200px;
 }
 .mark-float{
-  width:min(72vw, 360px);
+  width:clamp(260px, 34vw, 640px);
   margin-top:56px;
 }
 .mark-wrap{
