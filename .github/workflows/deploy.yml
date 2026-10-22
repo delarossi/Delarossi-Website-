@@ -1,0 +1,47 @@
+# Aktualisiert www.delarossi.de auf dem Hetzner-Server bei jedem Push auf den
+# Website-Branch (oder per Hand über "Run workflow").
+# Serverseite: deploy/hetzner/delarossi-deploy.sh, erreichbar nur über einen
+# eingeschränkten Schlüssel (deploy/hetzner/setup-auto-deploy.sh).
+name: Deploy www.delarossi.de
+
+on:
+  push:
+    branches: [claude/musical-framer-style-8jnsxo]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Server aktualisieren
+        env:
+          DEPLOY_KEY: ${{ secrets.DELAROSSI_DEPLOY_KEY }}
+          # Öffentlicher Host-Schlüssel des Servers (/etc/ssh/ssh_host_ed25519_key.pub),
+          # kein Geheimnis. Nur ändern, wenn der Server neu installiert wird.
+          HOST_KEY: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAKT4lzlEqzkoh7CfQhaMZxMGsy1QAW5b5KEIcnZNLYk
+          SHA: ${{ github.sha }}
+        run: |
+          if [ -z "$DEPLOY_KEY" ]; then
+            echo "::error::Secret DELAROSSI_DEPLOY_KEY fehlt (siehe deploy/hetzner/README.md)"; exit 1
+          fi
+          install -m 700 -d ~/.ssh
+          # Das Secret enthält den Schlüssel als eine base64-Zeile (setup-auto-deploy.sh)
+          # oder als üblichen BEGIN/END-Block.
+          if printf '%s' "$DEPLOY_KEY" | grep -q 'BEGIN OPENSSH PRIVATE KEY'; then
+            printf '%s\n' "$DEPLOY_KEY" | tr -d '\r' | sed 's/^[[:space:]]*//; s/[[:space:]]*$//' | grep -v '^$' > ~/.ssh/delarossi-deploy
+          else
+            printf '%s' "$DEPLOY_KEY" | tr -d ' \r\n\t' | base64 -d > ~/.ssh/delarossi-deploy
+          fi
+          chmod 600 ~/.ssh/delarossi-deploy
+          printf '167.233.57.178 %s\n' "$HOST_KEY" > ~/.ssh/known_hosts
+          # Übergibt nur die Commit-ID; der Server holt den Stand selbst per git.
+          printf '%s\n' "$SHA" | ssh -T -i ~/.ssh/delarossi-deploy -o IdentitiesOnly=yes -o BatchMode=yes \
+            -o StrictHostKeyChecking=yes root@167.233.57.178
